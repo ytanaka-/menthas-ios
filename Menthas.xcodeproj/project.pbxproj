@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24711C2FE2470040E40D /* AppDelegate.swift */; };
+		F6EB24741C2FE2470040E40D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24731C2FE2470040E40D /* ViewController.swift */; };
+		F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24751C2FE2470040E40D /* Main.storyboard */; };
+		F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24781C2FE2470040E40D /* Assets.xcassets */; };
+		F6EB247C1C2FE2470040E40D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB247A1C2FE2470040E40D /* LaunchScreen.storyboard */; };
+		F6EB24871C2FE2470040E40D /* MenthasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24861C2FE2470040E40D /* MenthasTests.swift */; };
+		F6EB24921C2FE2470040E40D /* MenthasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24911C2FE2470040E40D /* MenthasUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6EB24831C2FE2470040E40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6EB24661C2FE2470040E40D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6EB246D1C2FE2470040E40D;
+			remoteInfo = Menthas;
+		};
+		F6EB248E1C2FE2470040E40D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6EB24661C2FE2470040E40D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6EB246D1C2FE2470040E40D;
+			remoteInfo = Menthas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6EB246E1C2FE2470040E40D /* Menthas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menthas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EB24711C2FE2470040E40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6EB24731C2FE2470040E40D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6EB24761C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6EB24781C2FE2470040E40D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6EB247B1C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6EB247D1C2FE2470040E40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6EB24821C2FE2470040E40D /* MenthasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenthasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EB24861C2FE2470040E40D /* MenthasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenthasTests.swift; sourceTree = "<group>"; };
+		F6EB24881C2FE2470040E40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6EB248D1C2FE2470040E40D /* MenthasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenthasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EB24911C2FE2470040E40D /* MenthasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenthasUITests.swift; sourceTree = "<group>"; };
+		F6EB24931C2FE2470040E40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6EB246B1C2FE2470040E40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EB247F1C2FE2470040E40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EB248A1C2FE2470040E40D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6EB24651C2FE2470040E40D = {
+			isa = PBXGroup;
+			children = (
+				F6EB24701C2FE2470040E40D /* Menthas */,
+				F6EB24851C2FE2470040E40D /* MenthasTests */,
+				F6EB24901C2FE2470040E40D /* MenthasUITests */,
+				F6EB246F1C2FE2470040E40D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6EB246F1C2FE2470040E40D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6EB246E1C2FE2470040E40D /* Menthas.app */,
+				F6EB24821C2FE2470040E40D /* MenthasTests.xctest */,
+				F6EB248D1C2FE2470040E40D /* MenthasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6EB24701C2FE2470040E40D /* Menthas */ = {
+			isa = PBXGroup;
+			children = (
+				F6EB24711C2FE2470040E40D /* AppDelegate.swift */,
+				F6EB24731C2FE2470040E40D /* ViewController.swift */,
+				F6EB24751C2FE2470040E40D /* Main.storyboard */,
+				F6EB24781C2FE2470040E40D /* Assets.xcassets */,
+				F6EB247A1C2FE2470040E40D /* LaunchScreen.storyboard */,
+				F6EB247D1C2FE2470040E40D /* Info.plist */,
+			);
+			path = Menthas;
+			sourceTree = "<group>";
+		};
+		F6EB24851C2FE2470040E40D /* MenthasTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6EB24861C2FE2470040E40D /* MenthasTests.swift */,
+				F6EB24881C2FE2470040E40D /* Info.plist */,
+			);
+			path = MenthasTests;
+			sourceTree = "<group>";
+		};
+		F6EB24901C2FE2470040E40D /* MenthasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6EB24911C2FE2470040E40D /* MenthasUITests.swift */,
+				F6EB24931C2FE2470040E40D /* Info.plist */,
+			);
+			path = MenthasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6EB246D1C2FE2470040E40D /* Menthas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6EB24961C2FE2470040E40D /* Build configuration list for PBXNativeTarget "Menthas" */;
+			buildPhases = (
+				F6EB246A1C2FE2470040E40D /* Sources */,
+				F6EB246B1C2FE2470040E40D /* Frameworks */,
+				F6EB246C1C2FE2470040E40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Menthas;
+			productName = Menthas;
+			productReference = F6EB246E1C2FE2470040E40D /* Menthas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6EB24811C2FE2470040E40D /* MenthasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6EB24991C2FE2470040E40D /* Build configuration list for PBXNativeTarget "MenthasTests" */;
+			buildPhases = (
+				F6EB247E1C2FE2470040E40D /* Sources */,
+				F6EB247F1C2FE2470040E40D /* Frameworks */,
+				F6EB24801C2FE2470040E40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6EB24841C2FE2470040E40D /* PBXTargetDependency */,
+			);
+			name = MenthasTests;
+			productName = MenthasTests;
+			productReference = F6EB24821C2FE2470040E40D /* MenthasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6EB248C1C2FE2470040E40D /* MenthasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6EB249C1C2FE2470040E40D /* Build configuration list for PBXNativeTarget "MenthasUITests" */;
+			buildPhases = (
+				F6EB24891C2FE2470040E40D /* Sources */,
+				F6EB248A1C2FE2470040E40D /* Frameworks */,
+				F6EB248B1C2FE2470040E40D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6EB248F1C2FE2470040E40D /* PBXTargetDependency */,
+			);
+			name = MenthasUITests;
+			productName = MenthasUITests;
+			productReference = F6EB248D1C2FE2470040E40D /* MenthasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6EB24661C2FE2470040E40D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kouki Saito";
+				TargetAttributes = {
+					F6EB246D1C2FE2470040E40D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					F6EB24811C2FE2470040E40D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F6EB246D1C2FE2470040E40D;
+					};
+					F6EB248C1C2FE2470040E40D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = F6EB246D1C2FE2470040E40D;
+					};
+				};
+			};
+			buildConfigurationList = F6EB24691C2FE2470040E40D /* Build configuration list for PBXProject "Menthas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6EB24651C2FE2470040E40D;
+			productRefGroup = F6EB246F1C2FE2470040E40D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6EB246D1C2FE2470040E40D /* Menthas */,
+				F6EB24811C2FE2470040E40D /* MenthasTests */,
+				F6EB248C1C2FE2470040E40D /* MenthasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6EB246C1C2FE2470040E40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EB247C1C2FE2470040E40D /* LaunchScreen.storyboard in Resources */,
+				F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */,
+				F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EB24801C2FE2470040E40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EB248B1C2FE2470040E40D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6EB246A1C2FE2470040E40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EB24741C2FE2470040E40D /* ViewController.swift in Sources */,
+				F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EB247E1C2FE2470040E40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EB24871C2FE2470040E40D /* MenthasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EB24891C2FE2470040E40D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6EB24921C2FE2470040E40D /* MenthasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6EB24841C2FE2470040E40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6EB246D1C2FE2470040E40D /* Menthas */;
+			targetProxy = F6EB24831C2FE2470040E40D /* PBXContainerItemProxy */;
+		};
+		F6EB248F1C2FE2470040E40D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6EB246D1C2FE2470040E40D /* Menthas */;
+			targetProxy = F6EB248E1C2FE2470040E40D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6EB24751C2FE2470040E40D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EB24761C2FE2470040E40D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6EB247A1C2FE2470040E40D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6EB247B1C2FE2470040E40D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6EB24941C2FE2470040E40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6EB24951C2FE2470040E40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6EB24971C2FE2470040E40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Menthas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.Menthas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6EB24981C2FE2470040E40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Menthas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.Menthas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6EB249A1C2FE2470040E40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MenthasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.MenthasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menthas.app/Menthas";
+			};
+			name = Debug;
+		};
+		F6EB249B1C2FE2470040E40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MenthasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.MenthasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Menthas.app/Menthas";
+			};
+			name = Release;
+		};
+		F6EB249D1C2FE2470040E40D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MenthasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.MenthasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Menthas;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F6EB249E1C2FE2470040E40D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MenthasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.MenthasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Menthas;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6EB24691C2FE2470040E40D /* Build configuration list for PBXProject "Menthas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EB24941C2FE2470040E40D /* Debug */,
+				F6EB24951C2FE2470040E40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6EB24961C2FE2470040E40D /* Build configuration list for PBXNativeTarget "Menthas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EB24971C2FE2470040E40D /* Debug */,
+				F6EB24981C2FE2470040E40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6EB24991C2FE2470040E40D /* Build configuration list for PBXNativeTarget "MenthasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EB249A1C2FE2470040E40D /* Debug */,
+				F6EB249B1C2FE2470040E40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6EB249C1C2FE2470040E40D /* Build configuration list for PBXNativeTarget "MenthasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6EB249D1C2FE2470040E40D /* Debug */,
+				F6EB249E1C2FE2470040E40D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6EB24661C2FE2470040E40D /* Project object */;
+}
