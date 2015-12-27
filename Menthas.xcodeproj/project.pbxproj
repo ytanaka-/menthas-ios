@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D900143DA55B20454D8860E /* Pods_Menthas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3467971742ACB72A45F711 /* Pods_Menthas.framework */; };
 		F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24711C2FE2470040E40D /* AppDelegate.swift */; };
-		F6EB24741C2FE2470040E40D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24731C2FE2470040E40D /* ViewController.swift */; };
 		F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24751C2FE2470040E40D /* Main.storyboard */; };
 		F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24781C2FE2470040E40D /* Assets.xcassets */; };
 		F6EB247C1C2FE2470040E40D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB247A1C2FE2470040E40D /* LaunchScreen.storyboard */; };
 		F6EB24871C2FE2470040E40D /* MenthasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24861C2FE2470040E40D /* MenthasTests.swift */; };
 		F6EB24921C2FE2470040E40D /* MenthasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24911C2FE2470040E40D /* MenthasUITests.swift */; };
+		F6EB24A21C2FE7D30040E40D /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F6EB24E01C2FEA7A0040E40D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F6EB24E21C2FEA8E0040E40D /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24E11C2FEA8E0040E40D /* CategoryListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EC4EF72881F0C4214478322 /* Pods-Menthas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menthas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Menthas/Pods-Menthas.release.xcconfig"; sourceTree = "<group>"; };
+		579607EE262523206E23D0BC /* Pods-Menthas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menthas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Menthas/Pods-Menthas.debug.xcconfig"; sourceTree = "<group>"; };
 		F6EB246E1C2FE2470040E40D /* Menthas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menthas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EB24711C2FE2470040E40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6EB24731C2FE2470040E40D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6EB24761C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6EB24781C2FE2470040E40D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6EB247B1C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		F6EB248D1C2FE2470040E40D /* MenthasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenthasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EB24911C2FE2470040E40D /* MenthasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenthasUITests.swift; sourceTree = "<group>"; };
 		F6EB24931C2FE2470040E40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F6EB24E11C2FEA8E0040E40D /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		FE3467971742ACB72A45F711 /* Pods_Menthas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Menthas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D900143DA55B20454D8860E /* Pods_Menthas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB3F2D117E1FFEE34DCFA181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE3467971742ACB72A45F711 /* Pods_Menthas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDC1EAA82750AB7A241F3900 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				579607EE262523206E23D0BC /* Pods-Menthas.debug.xcconfig */,
+				0EC4EF72881F0C4214478322 /* Pods-Menthas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F6EB24651C2FE2470040E40D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +107,8 @@
 				F6EB24851C2FE2470040E40D /* MenthasTests */,
 				F6EB24901C2FE2470040E40D /* MenthasUITests */,
 				F6EB246F1C2FE2470040E40D /* Products */,
+				DDC1EAA82750AB7A241F3900 /* Pods */,
+				CB3F2D117E1FFEE34DCFA181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +125,8 @@
 		F6EB24701C2FE2470040E40D /* Menthas */ = {
 			isa = PBXGroup;
 			children = (
+				F6EB24A01C2FE7C10040E40D /* ViewControllers */,
 				F6EB24711C2FE2470040E40D /* AppDelegate.swift */,
-				F6EB24731C2FE2470040E40D /* ViewController.swift */,
 				F6EB24751C2FE2470040E40D /* Main.storyboard */,
 				F6EB24781C2FE2470040E40D /* Assets.xcassets */,
 				F6EB247A1C2FE2470040E40D /* LaunchScreen.storyboard */,
@@ -125,6 +153,16 @@
 			path = MenthasUITests;
 			sourceTree = "<group>";
 		};
+		F6EB24A01C2FE7C10040E40D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */,
+				F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */,
+				F6EB24E11C2FEA8E0040E40D /* CategoryListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6EB24961C2FE2470040E40D /* Build configuration list for PBXNativeTarget "Menthas" */;
 			buildPhases = (
+				496BB014BF13E9B145239D8C /* Check Pods Manifest.lock */,
 				F6EB246A1C2FE2470040E40D /* Sources */,
 				F6EB246B1C2FE2470040E40D /* Frameworks */,
 				F6EB246C1C2FE2470040E40D /* Resources */,
+				A7AC4B8FEBF164C16EE4C887 /* Embed Pods Frameworks */,
+				7FDE940D0DA4C670CE5FE427 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +233,7 @@
 				TargetAttributes = {
 					F6EB246D1C2FE2470040E40D = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = HSPXR438P9;
 					};
 					F6EB24811C2FE2470040E40D = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -250,12 +292,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		496BB014BF13E9B145239D8C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FDE940D0DA4C670CE5FE427 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menthas/Pods-Menthas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7AC4B8FEBF164C16EE4C887 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menthas/Pods-Menthas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F6EB246A1C2FE2470040E40D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EB24741C2FE2470040E40D /* ViewController.swift in Sources */,
+				F6EB24E21C2FEA8E0040E40D /* CategoryListViewController.swift in Sources */,
+				F6EB24E01C2FEA7A0040E40D /* CategoryViewController.swift in Sources */,
+				F6EB24A21C2FE7D30040E40D /* MainSplitViewController.swift in Sources */,
 				F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,9 +488,12 @@
 		};
 		F6EB24971C2FE2470040E40D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 579607EE262523206E23D0BC /* Pods-Menthas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Menthas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.Menthas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,9 +502,12 @@
 		};
 		F6EB24981C2FE2470040E40D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EC4EF72881F0C4214478322 /* Pods-Menthas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Menthas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.koukilab.Menthas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -483,6 +581,7 @@
 				F6EB24981C2FE2470040E40D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6EB24991C2FE2470040E40D /* Build configuration list for PBXNativeTarget "MenthasTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +590,7 @@
 				F6EB249B1C2FE2470040E40D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6EB249C1C2FE2470040E40D /* Build configuration list for PBXNativeTarget "MenthasUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +599,7 @@
 				F6EB249E1C2FE2470040E40D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
