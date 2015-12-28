@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Category View Controller-->
@@ -23,35 +24,74 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="かてごりー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMh-vD-7Yv">
+                                <rect key="frame" x="12" y="109" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="4BT-ha-GTy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATF-Kh-5O9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="485"/>
+            <point key="canvasLocation" x="1104" y="617"/>
         </scene>
         <!--カテゴリリスト-->
         <scene sceneID="cvV-f6-RI7">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="tG0-qE-HiT" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HhX-L5-aQa">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="tG0-qE-HiT" customClass="CategoryListTableViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="28" sectionFooterHeight="28" id="HhX-L5-aQa">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="hUc-6w-mp4">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ニュースカテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAZ-8p-EAE">
+                                    <rect key="frame" x="8" y="15" width="136" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="M6U-qn-Eyb">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="M6U-qn-Eyb" customClass="CategoryListTableViewCell" customModule="Menthas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="600" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M6U-qn-Eyb" id="iTt-DK-QfG">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="29.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt2-oY-l66">
+                                            <rect key="frame" x="8" y="6.5" width="70" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Nt2-oY-l66" firstAttribute="centerY" secondItem="iTt-DK-QfG" secondAttribute="centerY" id="cbm-TA-VpG"/>
+                                        <constraint firstItem="Nt2-oY-l66" firstAttribute="leading" secondItem="iTt-DK-QfG" secondAttribute="leadingMargin" id="wac-OY-3AV"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="categoryNameLabel" destination="Nt2-oY-l66" id="EmQ-ge-gZo"/>
+                                    <segue destination="Dqx-Qf-UdD" kind="show" identifier="Category" id="JF9-9s-6Qr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="tG0-qE-HiT" id="bkR-Te-HYR"/>
-                            <outlet property="delegate" destination="tG0-qE-HiT" id="skf-BN-PnX"/>
+                            <outlet property="dataSource" destination="tG0-qE-HiT" id="FSJ-ec-q6c"/>
+                            <outlet property="delegate" destination="tG0-qE-HiT" id="RXm-qa-dHy"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="カテゴリリスト" id="nCE-5I-ees"/>
@@ -63,6 +103,7 @@
         <!--Navigation Controller-->
         <scene sceneID="FA2-Ia-tqS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zDa-qK-np0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="8KT-JV-1vu" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ma3-ny-iDa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -72,7 +113,6 @@
                         <segue destination="tG0-qE-HiT" kind="relationship" relationship="rootViewController" id="ghf-pa-irM"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zDa-qK-np0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="292" y="-176"/>
         </scene>
@@ -82,12 +122,33 @@
                 <splitViewController id="sq4-U2-fC4" customClass="MainSplitViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="8KT-JV-1vu" kind="relationship" relationship="masterViewController" id="BPg-M2-fhL"/>
-                        <segue destination="5hb-k2-PY6" kind="relationship" relationship="detailViewController" id="dCA-TY-r3n"/>
+                        <segue destination="Dqx-Qf-UdD" kind="relationship" relationship="detailViewController" id="dCA-TY-r3n"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9r-Y6-hhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-528" y="155"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ib4-Wm-bHo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dqx-Qf-UdD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xud-mh-cpW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5hb-k2-PY6" kind="relationship" relationship="rootViewController" id="cdJ-r9-vzR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6Q-dU-R8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="617"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JF9-9s-6Qr"/>
+    </inferredMetricsTieBreakers>
 </document>

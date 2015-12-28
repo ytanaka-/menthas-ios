@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D900143DA55B20454D8860E /* Pods_Menthas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3467971742ACB72A45F711 /* Pods_Menthas.framework */; };
+		F64817C41C311911003EF6BA /* CategoryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817C31C311911003EF6BA /* CategoryListTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24711C2FE2470040E40D /* AppDelegate.swift */; };
 		F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24751C2FE2470040E40D /* Main.storyboard */; };
 		F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24781C2FE2470040E40D /* Assets.xcassets */; };
@@ -16,7 +17,8 @@
 		F6EB24921C2FE2470040E40D /* MenthasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24911C2FE2470040E40D /* MenthasUITests.swift */; };
 		F6EB24A21C2FE7D30040E40D /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F6EB24E01C2FEA7A0040E40D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		F6EB24E21C2FEA8E0040E40D /* CategoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24E11C2FEA8E0040E40D /* CategoryListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F6EB24E41C2FECBA0040E40D /* CategoryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24E31C2FECBA0040E40D /* CategoryListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F6EB24E71C2FEE5F0040E40D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24E61C2FEE5F0040E40D /* Category.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* Begin PBXFileReference section */
 		0EC4EF72881F0C4214478322 /* Pods-Menthas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menthas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Menthas/Pods-Menthas.release.xcconfig"; sourceTree = "<group>"; };
 		579607EE262523206E23D0BC /* Pods-Menthas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Menthas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Menthas/Pods-Menthas.debug.xcconfig"; sourceTree = "<group>"; };
+		F64817C31C311911003EF6BA /* CategoryListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewCell.swift; sourceTree = "<group>"; };
 		F6EB246E1C2FE2470040E40D /* Menthas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menthas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EB24711C2FE2470040E40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6EB24761C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,7 +56,8 @@
 		F6EB24931C2FE2470040E40D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
 		F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		F6EB24E11C2FEA8E0040E40D /* CategoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListViewController.swift; sourceTree = "<group>"; };
+		F6EB24E31C2FECBA0040E40D /* CategoryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListTableViewController.swift; sourceTree = "<group>"; };
+		F6EB24E61C2FEE5F0040E40D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		FE3467971742ACB72A45F711 /* Pods_Menthas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Menthas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,6 +104,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F64817C11C3118E3003EF6BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F64817C21C3118F1003EF6BA /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F64817C21C3118F1003EF6BA /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				F64817C31C311911003EF6BA /* CategoryListTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
 		F6EB24651C2FE2470040E40D = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +145,8 @@
 		F6EB24701C2FE2470040E40D /* Menthas */ = {
 			isa = PBXGroup;
 			children = (
+				F64817C11C3118E3003EF6BA /* Views */,
+				F6EB24E51C2FEE4E0040E40D /* Models */,
 				F6EB24A01C2FE7C10040E40D /* ViewControllers */,
 				F6EB24711C2FE2470040E40D /* AppDelegate.swift */,
 				F6EB24751C2FE2470040E40D /* Main.storyboard */,
@@ -158,9 +180,17 @@
 			children = (
 				F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */,
 				F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */,
-				F6EB24E11C2FEA8E0040E40D /* CategoryListViewController.swift */,
+				F6EB24E31C2FECBA0040E40D /* CategoryListTableViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F6EB24E51C2FEE4E0040E40D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6EB24E61C2FEE5F0040E40D /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,10 +375,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EB24E21C2FEA8E0040E40D /* CategoryListViewController.swift in Sources */,
 				F6EB24E01C2FEA7A0040E40D /* CategoryViewController.swift in Sources */,
+				F6EB24E71C2FEE5F0040E40D /* Category.swift in Sources */,
 				F6EB24A21C2FE7D30040E40D /* MainSplitViewController.swift in Sources */,
+				F6EB24E41C2FECBA0040E40D /* CategoryListTableViewController.swift in Sources */,
 				F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */,
+				F64817C41C311911003EF6BA /* CategoryListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
