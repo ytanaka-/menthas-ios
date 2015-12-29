@@ -12,6 +12,9 @@
 		F64817C61C326152003EF6BA /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817C51C326152003EF6BA /* Article.swift */; settings = {ASSET_TAGS = (); }; };
 		F64817C81C326654003EF6BA /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817C71C326654003EF6BA /* ArticleTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F64817CD1C326738003EF6BA /* ArticleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817CC1C326738003EF6BA /* ArticleTableView.swift */; settings = {ASSET_TAGS = (); }; };
+		F64817D01C32C1B9003EF6BA /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817CF1C32C1B9003EF6BA /* CategoryAPI.swift */; settings = {ASSET_TAGS = (); }; };
+		F64817D21C32C1C9003EF6BA /* MenthasRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817D11C32C1C9003EF6BA /* MenthasRequestType.swift */; settings = {ASSET_TAGS = (); }; };
+		F64817D41C32CC06003EF6BA /* APIErrorAlertControllerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817D31C32CC06003EF6BA /* APIErrorAlertControllerKit.swift */; settings = {ASSET_TAGS = (); }; };
 		F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24711C2FE2470040E40D /* AppDelegate.swift */; };
 		F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24751C2FE2470040E40D /* Main.storyboard */; };
 		F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24781C2FE2470040E40D /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		F64817C51C326152003EF6BA /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		F64817C71C326654003EF6BA /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		F64817CC1C326738003EF6BA /* ArticleTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableView.swift; sourceTree = "<group>"; };
+		F64817CF1C32C1B9003EF6BA /* CategoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
+		F64817D11C32C1C9003EF6BA /* MenthasRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenthasRequestType.swift; sourceTree = "<group>"; };
+		F64817D31C32CC06003EF6BA /* APIErrorAlertControllerKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorAlertControllerKit.swift; sourceTree = "<group>"; };
 		F6EB246E1C2FE2470040E40D /* Menthas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menthas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EB24711C2FE2470040E40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6EB24761C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +142,15 @@
 			path = TableViews;
 			sourceTree = "<group>";
 		};
+		F64817CE1C32C1AF003EF6BA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F64817D11C32C1C9003EF6BA /* MenthasRequestType.swift */,
+				F64817CF1C32C1B9003EF6BA /* CategoryAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		F6EB24651C2FE2470040E40D = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +176,7 @@
 		F6EB24701C2FE2470040E40D /* Menthas */ = {
 			isa = PBXGroup;
 			children = (
+				F64817CE1C32C1AF003EF6BA /* API */,
 				F6EB24E51C2FEE4E0040E40D /* Models */,
 				F64817C11C3118E3003EF6BA /* Views */,
 				F6EB24A01C2FE7C10040E40D /* ViewControllers */,
@@ -194,6 +210,7 @@
 		F6EB24A01C2FE7C10040E40D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F64817D31C32CC06003EF6BA /* APIErrorAlertControllerKit.swift */,
 				F6EB24A11C2FE7D30040E40D /* MainSplitViewController.swift */,
 				F6EB24DF1C2FEA7A0040E40D /* CategoryViewController.swift */,
 				F6EB24E31C2FECBA0040E40D /* CategoryListTableViewController.swift */,
@@ -394,9 +411,12 @@
 			files = (
 				F64817C61C326152003EF6BA /* Article.swift in Sources */,
 				F6EB24E01C2FEA7A0040E40D /* CategoryViewController.swift in Sources */,
+				F64817D41C32CC06003EF6BA /* APIErrorAlertControllerKit.swift in Sources */,
+				F64817D01C32C1B9003EF6BA /* CategoryAPI.swift in Sources */,
 				F6EB24E71C2FEE5F0040E40D /* Category.swift in Sources */,
 				F6EB24A21C2FE7D30040E40D /* MainSplitViewController.swift in Sources */,
 				F64817C81C326654003EF6BA /* ArticleTableViewCell.swift in Sources */,
+				F64817D21C32C1C9003EF6BA /* MenthasRequestType.swift in Sources */,
 				F6EB24E41C2FECBA0040E40D /* CategoryListTableViewController.swift in Sources */,
 				F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */,
 				F64817CD1C326738003EF6BA /* ArticleTableView.swift in Sources */,

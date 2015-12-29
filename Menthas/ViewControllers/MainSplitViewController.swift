@@ -13,6 +13,8 @@ class MainSplitViewController: UISplitViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        preferredDisplayMode = .AllVisible
+        preferredPrimaryColumnWidthFraction = 0.25
     }
 
     override func didReceiveMemoryWarning() {

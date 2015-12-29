@@ -57,7 +57,6 @@ extension ArticleTableView: UITableViewDataSource {
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Article", forIndexPath: indexPath) as! ArticleTableViewCell
-        print(indexPath.section)
         cell.configureCell(articles[indexPath.section])
         return cell
     }

@@ -43,7 +43,7 @@
                                                     <color key="textColor" red="0.32259110699999999" green="0.57781172349999999" blue="0.73756264739999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjw-vc-SQ5">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjw-vc-SQ5">
                                                     <rect key="frame" x="8" y="37" width="544" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="120" id="EeG-kZ-cz0"/>

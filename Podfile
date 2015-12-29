@@ -8,6 +8,7 @@ target 'Menthas' do
   pod 'SwiftyJSON'
   pod 'UIColor_Hex_Swift', '~> 1.8'
   pod 'SDWebImage', '~>3.7'
+  pod 'APIKit', '~> 1.1.2'
 end
 
 target 'MenthasTests' do

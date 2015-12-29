@@ -18,4 +18,16 @@ struct Article {
     let hatebu: Int
     let categoryName: String
     let categoryColor: String
+
+    init(dictionary: [String: AnyObject]) {
+        id = dictionary["_id"] as? String ?? ""
+        title = dictionary["page"]?["title"] as? String ?? ""
+        description = dictionary["page"]?["description"] as? String ?? ""
+        siteName = dictionary["page"]?["site_name"] as? String ?? ""
+        url = dictionary["page"]?["url"] as? String ?? ""
+        thumbnail = dictionary["page"]?["thumbnail"] as? String ?? ""
+        hatebu = dictionary["page"]?["hatebu"] as? Int ?? 0
+        categoryName = dictionary["category"]?["name"] as? String ?? ""
+        categoryColor = dictionary["category"]?["color"] as? String ?? "#000000"
+    }
 }

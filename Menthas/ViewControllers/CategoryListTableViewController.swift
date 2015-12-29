@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import APIKit
 
 class CategoryListTableViewController: UITableViewController {
 
-    let categories = (0..<10).map { Category(name: "test\($0)") }
+    var categories = [Category]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+        let request = GetCategories()
+        Session.sendRequest(request) {
+            [weak self] result in
+            switch result {
+            case .Success(let categories):
+                self?.categories = categories
+            case .Failure(let error):
+                let errorAlert = APIErrorAlertControllerKit.errorAlert(error)
+                self?.presentViewController(errorAlert, animated: true, completion: nil)
+            }
+        }
     }
+
 
     override func viewWillAppear(animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: true)
@@ -93,10 +110,7 @@ class CategoryListTableViewController: UITableViewController {
                 let category = categories[indexPath.row]
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! CategoryViewController
                 controller.title = category.name
-                /*
-                controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
-                controller.navigationItem.leftItemsSupplementBackButton = true
-                */
+                controller.categoryName = category.name
             }
         }
     }
