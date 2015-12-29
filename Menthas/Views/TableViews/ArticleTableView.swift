@@ -8,14 +8,20 @@
 
 import UIKit
 
+protocol ArticleTableViewDelegate {
+    func articleTableView(tableView: ArticleTableView, selectedArticle article: Article)
+}
+
 class ArticleTableView: UITableView {
 
+    var articleTableViewDelegate: ArticleTableViewDelegate?
     var articles = [Article]() {
         didSet {
             delegate = self
             dataSource = self
         }
     }
+
 
     /*
     // Only override drawRect: if you perform custom drawing.
@@ -30,6 +36,10 @@ class ArticleTableView: UITableView {
 // MARK: - UITableViewDelegate
 extension ArticleTableView: UITableViewDelegate {
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let article = articles[indexPath.section]
+        articleTableViewDelegate?.articleTableView(self, selectedArticle: article)
+    }
 }
 
 // MARK: - UITableViewDataSource
