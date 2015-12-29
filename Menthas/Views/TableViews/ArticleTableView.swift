@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import APIKit
 
 protocol ArticleTableViewDelegate {
     func articleTableView(tableView: ArticleTableView, selectedArticle article: Article)
+    func articleTableViewNeedMoreArticles()
 }
 
 class ArticleTableView: UITableView {
-
     var articleTableViewDelegate: ArticleTableViewDelegate?
     var articles = [Article]() {
         didSet {
@@ -22,23 +23,24 @@ class ArticleTableView: UITableView {
         }
     }
 
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    func appendArticles(articles newArticles: [Article]) {
+        let sections = NSIndexSet(indexesInRange: NSRange.init(location: articles.count, length: newArticles.count))
+        articles = articles + newArticles
+        insertSections(sections, withRowAnimation: .None)
     }
-    */
-
 }
 
 // MARK: - UITableViewDelegate
 extension ArticleTableView: UITableViewDelegate {
-
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let article = articles[indexPath.section]
         articleTableViewDelegate?.articleTableView(self, selectedArticle: article)
+    }
+
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.section > articles.count - 5 {
+            articleTableViewDelegate?.articleTableViewNeedMoreArticles()
+        }
     }
 }
 

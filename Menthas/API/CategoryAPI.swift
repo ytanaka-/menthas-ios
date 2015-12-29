@@ -12,6 +12,7 @@ import APIKit
 struct GetArticles: MenthasRequestType {
     typealias Response = [Article]
     let categoryName: String
+    let offset: Int
 
     var method: HTTPMethod {
         return .GET
@@ -22,7 +23,12 @@ struct GetArticles: MenthasRequestType {
     }
 
     var parameters: [String: AnyObject] {
-        return ["offset": 3]
+        return ["offset": offset]
+    }
+
+    init(categoryName: String, offset: Int = 0) {
+        self.categoryName = categoryName
+        self.offset = offset
     }
 
 
