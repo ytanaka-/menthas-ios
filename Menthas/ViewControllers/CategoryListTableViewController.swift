@@ -27,7 +27,9 @@ class CategoryListTableViewController: UITableViewController {
             [weak self] result in
             switch result {
             case .Success(let categories):
-                self?.categories = categories
+                self?.categories = [Category(name: "top")] + categories
+                // Select top row in default
+                self?.tableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: false, scrollPosition: .None)
             case .Failure(let error):
                 let errorAlert = APIErrorAlertControllerKit.errorAlert(error)
                 self?.presentViewController(errorAlert, animated: true, completion: nil)
