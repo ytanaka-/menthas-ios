@@ -6,6 +6,8 @@ use_frameworks!
 target 'Menthas' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  pod 'UIColor_Hex_Swift', '~> 1.8'
+  pod 'SDWebImage', '~>3.7'
 end
 
 target 'MenthasTests' do

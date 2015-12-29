@@ -35,7 +35,6 @@ class CategoryListTableViewCell: UITableViewCell {
         } else {
             backgroundColor = UIColor.blackColor()
         }
-
     }
 
     func configureCell(name: String) {
