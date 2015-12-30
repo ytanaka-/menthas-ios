@@ -15,6 +15,7 @@
 		F64817D01C32C1B9003EF6BA /* CategoryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817CF1C32C1B9003EF6BA /* CategoryAPI.swift */; settings = {ASSET_TAGS = (); }; };
 		F64817D21C32C1C9003EF6BA /* MenthasRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817D11C32C1C9003EF6BA /* MenthasRequestType.swift */; settings = {ASSET_TAGS = (); }; };
 		F64817D41C32CC06003EF6BA /* APIErrorAlertControllerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64817D31C32CC06003EF6BA /* APIErrorAlertControllerKit.swift */; settings = {ASSET_TAGS = (); }; };
+		F66384621C338C44008C53CC /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F66384611C338C44008C53CC /* Settings.bundle */; settings = {ASSET_TAGS = (); }; };
 		F6EB24721C2FE2470040E40D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EB24711C2FE2470040E40D /* AppDelegate.swift */; };
 		F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24751C2FE2470040E40D /* Main.storyboard */; };
 		F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EB24781C2FE2470040E40D /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		F64817CF1C32C1B9003EF6BA /* CategoryAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryAPI.swift; sourceTree = "<group>"; };
 		F64817D11C32C1C9003EF6BA /* MenthasRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenthasRequestType.swift; sourceTree = "<group>"; };
 		F64817D31C32CC06003EF6BA /* APIErrorAlertControllerKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorAlertControllerKit.swift; sourceTree = "<group>"; };
+		F66384611C338C44008C53CC /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F6EB246E1C2FE2470040E40D /* Menthas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menthas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6EB24711C2FE2470040E40D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6EB24761C2FE2470040E40D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				F6EB24751C2FE2470040E40D /* Main.storyboard */,
 				F6EB24781C2FE2470040E40D /* Assets.xcassets */,
 				F6EB247A1C2FE2470040E40D /* LaunchScreen.storyboard */,
+				F66384611C338C44008C53CC /* Settings.bundle */,
 				F6EB247D1C2FE2470040E40D /* Info.plist */,
 			);
 			path = Menthas;
@@ -240,6 +243,7 @@
 				F6EB246C1C2FE2470040E40D /* Resources */,
 				A7AC4B8FEBF164C16EE4C887 /* Embed Pods Frameworks */,
 				7FDE940D0DA4C670CE5FE427 /* Copy Pods Resources */,
+				F66384631C3394DF008C53CC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -334,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F66384621C338C44008C53CC /* Settings.bundle in Resources */,
 				F6EB247C1C2FE2470040E40D /* LaunchScreen.storyboard in Resources */,
 				F6EB24791C2FE2470040E40D /* Assets.xcassets in Resources */,
 				F6EB24771C2FE2470040E40D /* Main.storyboard in Resources */,
@@ -401,6 +406,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Menthas/Pods-Menthas-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F66384631C3394DF008C53CC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_VERSION=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" $PRODUCT_SETTINGS_PATH)\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue ${APP_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist\"\n\nBUILD_NUMBER=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" $PRODUCT_SETTINGS_PATH)\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue ${BUILD_NUMBER}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
