@@ -8,10 +8,15 @@
 
 import UIKit
 import APIKit
+import SafariServices
 
 class CategoryViewController: UIViewController {
 
-    @IBOutlet weak var articleTableView: ArticleTableView!
+    @IBOutlet weak var articleTableView: ArticleTableView! {
+        didSet {
+            articleTableView.articleTableViewDelegate = self
+        }
+    }
     var categoryName = "top"
 
     override func viewDidLoad() {
@@ -47,4 +52,18 @@ class CategoryViewController: UIViewController {
     }
     */
 
+}
+
+extension CategoryViewController: ArticleTableViewDelegate {
+    func articleTableView(tableView: ArticleTableView, selectedArticle article: Article) {
+        if let url = NSURL(string: article.url) {
+            if #available(iOS 9.0, *) {
+                let safariViewController = SFSafariViewController(URL: url, entersReaderIfAvailable: true)
+                presentViewController(safariViewController, animated: true, completion: nil)
+            } else {
+                UIApplication.sharedApplication().openURL(url)
+            }
+
+        }
+    }
 }
