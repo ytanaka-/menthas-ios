@@ -18,6 +18,8 @@ class CategoryViewController: UIViewController {
         }
     }
     var categoryName = "top"
+    var loading = false
+    var finished = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +66,30 @@ extension CategoryViewController: ArticleTableViewDelegate {
                 UIApplication.sharedApplication().openURL(url)
             }
 
+        }
+    }
+
+    func articleTableViewNeedMoreArticles() {
+        if loading || finished {
+            return
+        }
+        loading = true
+
+        let request = GetArticles(categoryName: categoryName, offset: articleTableView.articles.count)
+        Session.sendRequest(request) {
+            [weak self] result in
+            switch result {
+            case .Success(let articles):
+                if articles.isEmpty {
+                    self?.finished = true
+                } else {
+                    self?.articleTableView?.appendArticles(articles: articles)
+                }
+            case .Failure(let error):
+                let errorAlert = APIErrorAlertControllerKit.errorAlert(error)
+                self?.presentViewController(errorAlert, animated: true, completion: nil)
+            }
+            self?.loading = false
         }
     }
 }
