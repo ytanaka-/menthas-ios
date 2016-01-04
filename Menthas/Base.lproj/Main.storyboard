@@ -137,7 +137,7 @@
             </objects>
             <point key="canvasLocation" x="1104" y="617"/>
         </scene>
-        <!--カテゴリリスト-->
+        <!--カテゴリ-->
         <scene sceneID="cvV-f6-RI7">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="tG0-qE-HiT" customClass="CategoryListTableViewController" customModule="Menthas" customModuleProvider="target" sceneMemberID="viewController">
@@ -150,14 +150,18 @@
                             <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ニュースカテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAZ-8p-EAE">
-                                    <rect key="frame" x="8" y="15" width="136" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ニュースカテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAZ-8p-EAE">
+                                    <rect key="frame" x="8" y="11" width="136" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.84854682586477992" green="0.84854682586477992" blue="0.84854682586477992" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="kAZ-8p-EAE" firstAttribute="centerY" secondItem="hUc-6w-mp4" secondAttribute="centerY" id="LD8-Yg-Acn"/>
+                                <constraint firstItem="kAZ-8p-EAE" firstAttribute="leading" secondItem="hUc-6w-mp4" secondAttribute="leading" constant="8" id="e3I-Jb-p2l"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="M6U-qn-Eyb" customClass="CategoryListTableViewCell" customModule="Menthas" customModuleProvider="target">
@@ -192,7 +196,7 @@
                             <outlet property="delegate" destination="tG0-qE-HiT" id="RXm-qa-dHy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="カテゴリリスト" id="nCE-5I-ees"/>
+                    <navigationItem key="navigationItem" title="カテゴリ" id="nCE-5I-ees"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="glb-aV-ftu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

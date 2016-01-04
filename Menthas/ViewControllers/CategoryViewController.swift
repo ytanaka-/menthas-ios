@@ -23,7 +23,7 @@ class CategoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = categoryName
+        title = "#\(categoryName)"
 
         let request = GetArticles(categoryName: categoryName)
         Session.sendRequest(request) {
