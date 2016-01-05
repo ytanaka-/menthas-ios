@@ -19,3 +19,7 @@ target 'MenthasUITests' do
 
 end
 
+post_install do | installer |
+  require 'fileutils'
+  FileUtils.cp_r('Pods/Target Support Files/Pods-Menthas/Pods-Menthas-acknowledgements.plist', 'Menthas/Settings.bundle/Acknowledgements.plist', :remove_destination => true)
+end
